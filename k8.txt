@@ -1,0 +1,9 @@
+kubectl version
+minikube version
+kubectl create deployment ubuntu --image=ubuntu:latest
+kubectl get deployments
+kubectl get pods
+kubectl expose deployment ubuntu --port=80 --type=LoadBalancer
+kubectl get services
+minikube service ubuntu
+kubectl scale deployment ubuntu --replica=3
